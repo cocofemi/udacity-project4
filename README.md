@@ -48,8 +48,16 @@ source .devops/bin/activate
 
 Explanation of file directorys 
 
-| First Header  | Second Header |
+| Directory  | Description  |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
+| Circleci  | Contains config.yml file for circleci  |
+| Model Data  | Showing housing prices in the boston area  |
+| Output_files | Showing docker and kubernetes log outputs |
+| app.py | REST endpoint in flask containing containing routes to fetch house prices in boston |
+| Dockerfile | Docker creation files with dependencies |
+| make_predictions.sh | Call to log output predictions from the REST api end point |
+| Makefile | to install project dependcies and lint |
+| requirements.txt | Python dependencies for the project |
+| run_docker | shell script to build the docker file |
+| run_kuberbetes | shell script to run and start up docker image in kubernetes | 
+| upload_docker | shell script to upload locally built image to docker hub | 
