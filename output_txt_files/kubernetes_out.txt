@@ -5,3 +5,51 @@ Forwarding from [::1]:8080 -> 80
 Handling connection for 8080
 Handling connection for 8080
 Handling connection for 8080
+
+#kubectl logs ml-api
+
+[2022-06-03 00:15:52,155] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2022-06-03 00:15:52,175] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-06-03 00:15:52,178] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-06-03 00:15:52,181] INFO in app: output prediction: 
+[20.35373177134412]
+127.0.0.1 - - [03/Jun/2022 00:15:52] "POST /predict HTTP/1.1" 200 -
+[2022-06-03 00:16:48,362] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2022-06-03 00:16:48,379] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-06-03 00:16:48,383] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-06-03 00:16:48,386] INFO in app: output prediction: 
+[20.35373177134412]
+127.0.0.1 - - [03/Jun/2022 00:16:48] "POST /predict HTTP/1.1" 200 -
+[2022-06-03 00:17:06,355] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2022-06-03 00:17:06,378] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-06-03 00:17:06,382] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-06-03 00:17:06,390] INFO in app: output prediction: 
+[20.35373177134412]
+127.0.0.1 - - [03/Jun/2022 00:17:06] "POST /predict HTTP/1.1" 200 -
+[2022-06-03 00:17:33,173] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2022-06-03 00:17:33,200] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-06-03 00:17:33,205] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-06-03 00:17:33,209] INFO in app: output prediction: 
+[20.35373177134412]
+127.0.0.1 - - [03/Jun/2022 00:17:33] "POST /predict HTTP/1.1" 200 -
+
